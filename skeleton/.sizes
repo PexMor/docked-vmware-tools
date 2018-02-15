@@ -1,0 +1,4 @@
+# tput is not present on alpine linux
+# COLUMNS=`tput cols`
+# LINES=`tput lines`
+# export COLUMNS LINES
