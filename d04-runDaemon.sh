@@ -8,7 +8,7 @@ SNAME=${SNAME%.*}
 
 if [ "x$SNAME" = "xrunDaemon" ]; then
     OPTS=-d
-    CMD="/bin/sh -c \"while true; do date; sleep 30; done\""
+    CMD="/usr/local/bin/loopForEver"
 else
     OPTS=-it
     CMD="/bin/bash"

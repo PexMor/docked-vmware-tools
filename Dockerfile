@@ -18,6 +18,8 @@ RUN sh -C /root/02-addUser.sh 1>&2
 RUN sh -C /root/03-addDebs.sh 1>&2
 RUN sh -C /root/04-addCpanMods.sh 1>&2
 
+ADD include/loopForEver /usr/local/bin/
+
 ENV HOME /host
 WORKDIR /host
 USER user
